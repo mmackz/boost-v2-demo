@@ -3,7 +3,7 @@
 import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { BoostWithEvent } from '@/types/boosts';
-import { normalizeArrayLike } from '@/utils';
+import { normalizeArrayLikeObject } from '@/utils';
 
 interface Boost {
   boosts: BoostWithEvent[];

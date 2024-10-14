@@ -1,6 +1,6 @@
 type ArrayLikeObject<T> = { [key: string]: T };
 
-export function normalizeArrayLike<T>(arrayLike: T[] | ArrayLikeObject<T>): T[] {
+export function normalizeArrayLikeObject<T>(arrayLike: T[] | ArrayLikeObject<T>): T[] {
   if (Array.isArray(arrayLike)) {
     return arrayLike;
   }
