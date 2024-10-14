@@ -2,6 +2,7 @@
 
 import { useAccount } from 'wagmi'
 import Header from '@/app/components/Header'
+import { BoostList } from './components/BoostList'
 function App() {
   const account = useAccount()
 
@@ -16,6 +17,7 @@ function App() {
             <p>Chain ID: {account.chainId}</p>
           </div>
         )}
+        <BoostList />
       </div>
     </>
   )
